@@ -45,7 +45,7 @@ div.carousel-container {
 /*Themes*/
 
 .light {
-    background-color: rgb(246, 201, 207);
+    background-color: rgb(245, 231, 233);
     transition: background-color 0.2s;
 
     & * {
@@ -54,7 +54,7 @@ div.carousel-container {
     }
 
     & button {
-        background-color: rgb(173, 246, 222);
+        background-color: rgb(109, 196, 141);
     }
 
     & select {
@@ -70,4 +70,14 @@ div.carousel-container {
         transition: color 0.2s;
         color: white;
     }
+
+    & button {
+        background-color: rgb(41, 39, 41);
+    }
+
+    & select {
+        background-color: grey;
+    }
+
+    
 }

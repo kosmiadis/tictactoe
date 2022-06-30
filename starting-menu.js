@@ -1,5 +1,5 @@
 const screens = []
-//const btnSound = new Audio('audio/btn-sound.mp3')
+const btnSound = new Audio('audio/btn-sound.mp3')
 
 const body = document.body 
 
@@ -14,11 +14,7 @@ const optionsScreen = document.querySelector('.options')
 //buttons
 const buttons = document.querySelectorAll('button')
 const optionsBtn = document.querySelector('#options')
-buttons.forEach(button => {
-    button.addEventListener('click', e => {
-        //btnSound.play()
-    })
-})
+
 optionsBtn.addEventListener('click', e => {
     carousel.style.transform = 'translateX(-100vw)'
 })
@@ -34,6 +30,22 @@ themeInput.addEventListener('input', e => {
 
     if (themeInput.value == 'light') {
         body.setAttribute('class', 'light')
+    }
+})
+
+soundInput.addEventListener('input', e => {
+    if (soundInput.value == 'off') {
+        buttons.forEach(button => {
+            button.removeEventListener('click',  button)
+        })
+    }
+
+    if (soundInput.value == 'on') {
+        buttons.forEach(button => {
+            button.addEventListener('click', e => {
+                btnSound.play()
+            })
+        })
     }
 })
 

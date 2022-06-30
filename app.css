@@ -50,7 +50,6 @@ div.options button {
   padding: 1em;
   font-weight: 900;
   border-radius: 20px;
-  background-color: #adf6de;
 }
 
 div.starting-menu {
@@ -88,7 +87,6 @@ div.starting-menu button {
   padding: 1em;
   font-weight: 900;
   border-radius: 20px;
-  background-color: #adf6de;
 }
 
 body {
@@ -127,7 +125,7 @@ div.carousel-container div.carousel {
 
 /*Themes*/
 .light {
-  background-color: #f6c9cf;
+  background-color: #f5e7e9;
   transition: background-color 0.2s;
 }
 
@@ -137,7 +135,7 @@ div.carousel-container div.carousel {
 }
 
 .light button {
-  background-color: #adf6de;
+  background-color: #6dc48d;
 }
 
 .light select {
@@ -152,4 +150,12 @@ div.carousel-container div.carousel {
 .dark * {
   transition: color 0.2s;
   color: white;
+}
+
+.dark button {
+  background-color: #292729;
+}
+
+.dark select {
+  background-color: grey;
 }
