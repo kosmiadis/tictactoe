@@ -10,14 +10,18 @@ div.options {
 }
 
 div.options div.select-container {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 div.options div.select-container div.sel {
+  padding: 0;
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
+  align-items: center;
+  justify-content: center;
   gap: 0;
 }
 
@@ -26,10 +30,18 @@ div.options div.select-container div.sel h1 {
 }
 
 div.options div.select-container div.sel select {
+  justify-self: center;
   width: 90%;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.4em;
+  border-radius: 10px;
 }
 
 div.options button {
+  margin-top: 2rem;
   border: none;
   appearance: none;
   outline: none;
@@ -55,7 +67,6 @@ div.starting-menu {
 div.starting-menu h1 {
   font-size: 4em;
   font-weight: 700;
-  color: #040428;
 }
 
 div.starting-menu div.btn-container {
@@ -81,8 +92,7 @@ div.starting-menu button {
 }
 
 body {
-  overflow: hidden;
-  background-color: #f6c9cf;
+  overflow-x: hidden;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -113,4 +123,33 @@ div.carousel-container div.carousel {
   transition: transform 0.1s;
   display: flex;
   justify-content: center;
+}
+
+/*Themes*/
+.light {
+  background-color: #f6c9cf;
+  transition: background-color 0.2s;
+}
+
+.light * {
+  transition: color 0.2s;
+  color: #040428;
+}
+
+.light button {
+  background-color: #adf6de;
+}
+
+.light select {
+  background-color: beige;
+}
+
+.dark {
+  background-color: #656565;
+  transition: background-color 0.2s;
+}
+
+.dark * {
+  transition: color 0.2s;
+  color: white;
 }

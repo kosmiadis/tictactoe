@@ -6,8 +6,7 @@
 $bg-image: linear-gradient(to bottom, purple, pink);
 
 body {
-    overflow:hidden;
-    background-color: rgb(246, 201, 207);
+    overflow-x: hidden;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -41,4 +40,34 @@ div.carousel-container {
     }
 
 
-} 
+}
+
+/*Themes*/
+
+.light {
+    background-color: rgb(246, 201, 207);
+    transition: background-color 0.2s;
+
+    & * {
+        transition: color 0.2s;
+        color: rgb(4, 4, 40);
+    }
+
+    & button {
+        background-color: rgb(173, 246, 222);
+    }
+
+    & select {
+        background-color: beige;
+    }
+}
+
+.dark {
+    background-color: rgb(101, 101, 101);
+    transition: background-color 0.2s;
+
+    & * {
+        transition: color 0.2s;
+        color: white;
+    }
+}
