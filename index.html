@@ -15,21 +15,33 @@
             <div class="carousel">
                 <div class="starting-menu">
                     <h1>TicTacToe</h1>
-                    <button id="1v1">Play 1v1</button>
-                    <button id="AI">Play vs AI</button>
-                    <button id="options">Options</button>
+                    <div class="btn-container">
+                        <button id="1v1">Play 1v1</button>
+                        <button id="options">Options</button>
+                    </div>
                 </div>
 
                 <div class="options">
-                    <select name="light-mode" id="options-light-color">
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
-                    </select>
-        
-                    <select name="sound" id="sound">
-                        <option value="on">On</option>
-                        <option value="off">Off</option>
-                    </select>
+                    
+                    <div class="select-container">
+                        <div class="sel"> 
+                            <h1>Theme</h1>
+                            <select name="light-mode" id="options-light-color">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                        </div>
+                        
+                        <div class="sel">
+                            <h1>Sound</h1>
+                            <select name="sound" id="sound">
+                                <option value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="back">Back</button>
                 </div>
             </div>
         </div>

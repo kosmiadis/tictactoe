@@ -1,4 +1,42 @@
+
 div.starting-menu {
+    width: 100%;
     position: absolute;
-    top: 200px;
+    transform: translateX(0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h1 {
+        font-size: 4em;
+        font-weight: 700;
+        color: rgb(4, 4, 40);
+
+    }
+
+    & div.btn-container {
+        margin-top: 4rem;
+        background-color: white;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3em;
+        background-color: transparent;
+
+        
+    }
+
+    & button {
+        border: none;
+        appearance: none;
+        outline: none;
+        font-size: 2em;
+        width: 100%;
+        padding: 1em;
+        font-weight: 900;
+        border-radius: 20px;
+        background-color: rgb(173, 246, 222);
+    }
 }   

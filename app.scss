@@ -2,17 +2,22 @@
 @import 'styles/_options.scss';
 @import 'styles/_starting-menu.scss';
 
+
+$bg-image: linear-gradient(to bottom, purple, pink);
+
 body {
+    overflow:hidden;
+    background-color: rgb(246, 201, 207);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-
     * {
         font-family: 'Lato';
     }
+    
 
 }
 
@@ -22,20 +27,17 @@ div.carousel-container {
     justify-content: center;
     text-align: center;
     width: 100%;
-    border: 2px solid;
     margin: 0;
-    position: relative;
 
     & div.carousel {
+        text-align: center;
+        width: 100%;
         position: relative;
         margin: 0;
         trasform-style: preserve-3d;
-        transition: transform 0.3s;
+        transition: transform 0.1s;
         display: flex;
         justify-content: center;
-
-        
-
     }
 
 

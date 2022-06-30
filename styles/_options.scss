@@ -1,3 +1,44 @@
+
+
 div.options {
     position: absolute;
+    transform: translateX(100vw);
+    display: flex;
+    flex-direction: column;
+
+    & div.select-container {
+        display: flex;
+        flex-direction: column;
+    
+        & div.sel {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 0;
+            & h1 {
+                font-size: 3em; 
+            }
+            & select {
+                width: 90%;
+                
+            }
+        
+        }
+    }
+
+    & button {
+        border: none;
+        appearance: none;
+        outline: none;
+        font-size: 2em;
+        width: 100%;
+        padding: 1em;
+        font-weight: 900;
+        border-radius: 20px;
+        background-color: rgb(173, 246, 222);
+        
+    }
+   
+
+   
 }
