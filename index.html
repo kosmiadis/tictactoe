@@ -11,26 +11,46 @@
 
     <body>
 
-        <div class="starting-menu">
-            <h1>TicTacToe</h1>
-            <button id="1v1">Play 1v1</button>
-            <button id="AI">Play vs AI</button>
-            <button id="options">Options</button>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="starting-menu">
+                    <h1>TicTacToe</h1>
+                    <button id="1v1">Play 1v1</button>
+                    <button id="AI">Play vs AI</button>
+                    <button id="options">Options</button>
+                </div>
+
+                <div class="options">
+                    <select name="light-mode" id="options-light-color">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+        
+                    <select name="sound" id="sound">
+                        <option value="on">On</option>
+                        <option value="off">Off</option>
+                    </select>
+                </div>
+            </div>
         </div>
+
+        
 
         <div class="oneVSone-game-screen">
             <div class="tic-tac-toe-container">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
             </div>
         </div>
+
+       
     
     </body>
     <script src="starting-menu.js"></script>
