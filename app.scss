@@ -45,12 +45,17 @@ div.carousel-container {
 /*Themes*/
 
 .light {
+    overflow: hidden;
     background-color: rgb(245, 231, 233);
     transition: background-color 0.2s;
 
     & * {
         transition: color 0.2s;
         color: rgb(4, 4, 40);
+    }
+
+    & div.starting-menu h1 {
+        color: rgb(6, 6, 66);
     }
 
     & button {
@@ -63,6 +68,7 @@ div.carousel-container {
 }
 
 .dark {
+    overflow: hidden;
     background-color: rgb(101, 101, 101);
     transition: background-color 0.2s;
 
@@ -70,6 +76,8 @@ div.carousel-container {
         transition: color 0.2s;
         color: white;
     }
+
+    
 
     & button {
         background-color: rgb(41, 39, 41);
