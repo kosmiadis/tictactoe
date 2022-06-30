@@ -1,5 +1,5 @@
 const screens = []
-const btnSound = new Audio('audio/btn-sound1.mp3')
+//const btnSound = new Audio('audio/btn-sound1.mp3')
 
 const body = document.body 
 
@@ -59,7 +59,7 @@ soundInput.addEventListener('input', e => {
     if (soundInput.value == 'on') {
         buttons.forEach(button => {
             button.addEventListener('click', e => {
-                btnSound.play()
+                //btnSound.play()
             })
         })
     }
