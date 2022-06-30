@@ -2,6 +2,15 @@ div.oneVSone-game-screen {
   display: none;
 }
 
+div.options {
+  position: absolute;
+}
+
+div.starting-menu {
+  position: absolute;
+  top: 200px;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
@@ -27,12 +36,10 @@ div.carousel-container {
 }
 
 div.carousel-container div.carousel {
+  position: relative;
   margin: 0;
   trasform-style: preserve-3d;
-  transform: translateX();
   transition: transform 0.3s;
-}
-
-div.carousel-container div.carousel:hover {
-  transform: translateX(50%);
+  display: flex;
+  justify-content: center;
 }

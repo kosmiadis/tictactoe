@@ -27,15 +27,15 @@ div.carousel-container {
     position: relative;
 
     & div.carousel {
+        position: relative;
         margin: 0;
         trasform-style: preserve-3d;
-        transform: translateX();
         transition: transform 0.3s;
+        display: flex;
+        justify-content: center;
+
         
-        
-        &:hover {
-            transform: translateX(50%);
-        }
+
     }
 
 

@@ -1,3 +1,4 @@
 div.starting-menu {
-  justify-self: center;
+  position: absolute;
+  top: 200px;
 }
