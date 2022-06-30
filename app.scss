@@ -1,0 +1,14 @@
+@import 'styles/_oneVsone-game-screen.scss';
+@import 'styles/_options.scss';
+@import 'styles/_starting-menu.scss';
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    * {
+        font-family: 'Lato';
+    }
+
+}
