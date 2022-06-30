@@ -1,5 +1,6 @@
 const screens = []
-//const btnSound = new Audio('audio/btn-sound1.mp3')
+const btnSound = new Audio('audio/btn-sound1.mp3')
+
 
 const body = document.body 
 
@@ -18,6 +19,13 @@ const optionsBtn = document.querySelector('#options')
 const play1V1Btn = document.querySelector('#oneVsone')
 const returnToMenuBtn = document.querySelector('#return')
 
+window.addEventListener('load', e => {
+    buttons.forEach(button => {
+        button.addEventListener('click', e => {
+            btnSound.play()
+        })
+    })    
+})
 
 optionsBtn.addEventListener('click', e => {
     carousel.style.transform = 'translateX(-100vw)'
@@ -25,7 +33,10 @@ optionsBtn.addEventListener('click', e => {
 
 play1V1Btn.addEventListener('click', e => {
     carouselContainer.style.display = 'none'
-    OneVSOneGameScreen.style.display = 'block'
+    OneVSOneGameScreen.style.display = 'flex'
+    OneVSOneGameScreen.style.flexDirection = 'column'
+    OneVSOneGameScreen.style.alignItems = 'center'
+    OneVSOneGameScreen.style.gap = '2em'
 
 })
 
@@ -49,20 +60,25 @@ themeInput.addEventListener('input', e => {
     }
 })
 
-soundInput.addEventListener('input', e => {
-    if (soundInput.value == 'off') {
-        buttons.forEach(button => {
-            button.removeEventListener('click', button)
-        })
-    }
 
+soundInput.addEventListener('input', e => {
     if (soundInput.value == 'on') {
         buttons.forEach(button => {
             button.addEventListener('click', e => {
-                //btnSound.play()
+                btnSound.play()
             })
         })
     }
+
+    if (soundInput.value == 'off') {
+        buttons.forEach(button => {
+            button.addEventListener('click', e => {
+               btnSound.pause()
+            })
+        })
+    }
+
+   
 })
 
 
