@@ -3,8 +3,17 @@
 @import 'styles/_starting-menu.scss';
 
 
-$bg-image: linear-gradient(to bottom, purple, pink);
+$btn-dark-mode-color: rgb(101, 101, 101);
+$btn-dark-mode-color-hover: rgb(78, 77, 77);
 
+$btn-light-mode-color: rgb(109, 196, 141);
+button {
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+}
 body {
     overflow-x: hidden;
     position: relative;
@@ -60,7 +69,7 @@ div.carousel-container {
     }
 
     & button {
-        background-color: rgb(109, 196, 141);
+        background-color: $btn-light-mode-color;
     }
 
     & select {
@@ -68,13 +77,16 @@ div.carousel-container {
     }
 
     & #return {
-        background-color: rgb(109, 196, 141);
+        background-color: $btn-light-mode-color;
     }
 }
 
 .dark {
+    button:hover {
+        background-color: $btn-dark-mode-color-hover;
+    }
     overflow: hidden;
-    background-color: rgb(101, 101, 101);
+    background-color: $btn-dark-mode-color;
     transition: background-color 0.2s;
 
     & * {
@@ -96,21 +108,10 @@ div.carousel-container {
         
         & div.actions {
             & #return button {
-                background-color: rgb(101, 101, 101);
+                background-color: $btn-dark-mode-color;
             }
         }
         
     }
 }
 
-@media screen and (min-width: 769px)  {
-    div.tic-tac-toe-container {
-        width: 600px;
-        height: 600px;
-
-        div.box {
-            width: 200px;
-            height: 200px;
-        }
-    }
-}

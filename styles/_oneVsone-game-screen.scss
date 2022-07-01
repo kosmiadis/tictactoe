@@ -61,4 +61,28 @@ div.oneVSone-game-screen {
         }
 
     }
+
+    @media screen and (min-width: 1021px)  {
+        div.tic-tac-toe-container {
+            width: 606px;
+            height: 606px;
+    
+            div.box {
+                width: 200px;
+                height: 200px;
+            }
+        
+        }
+        div.oneVSone-game-screen {
+
+            & div.actions {
+                padding: 2em;
+
+                & p {
+                    font-size: 4em;
+                }
+            }
+        }
+    }
 }
+

@@ -59,3 +59,20 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
   height: 108px;
   background-color: white;
 }
+
+@media screen and (min-width: 1021px) {
+  div.oneVSone-game-screen div.tic-tac-toe-container {
+    width: 606px;
+    height: 606px;
+  }
+  div.oneVSone-game-screen div.tic-tac-toe-container div.box {
+    width: 200px;
+    height: 200px;
+  }
+  div.oneVSone-game-screen div.oneVSone-game-screen div.actions {
+    padding: 2em;
+  }
+  div.oneVSone-game-screen div.oneVSone-game-screen div.actions p {
+    font-size: 4em;
+  }
+}
