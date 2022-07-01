@@ -25,7 +25,7 @@ div.starting-menu div.btn-container {
   background-color: transparent;
 }
 
-div.starting-menu button {
+div.starting-menu div.btn-container button {
   border: none;
   appearance: none;
   outline: none;
@@ -34,4 +34,17 @@ div.starting-menu button {
   padding: 1em;
   font-weight: 900;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 1021px) {
+  div.carousel-container div.carousel #start-menu h1 {
+    font-size: 6em;
+    font-weight: 900;
+  }
+  div.carousel-container div.carousel #start-menu div.btn-container {
+    width: 35%;
+  }
+  div.carousel-container div.carousel #start-menu div.btn-container button {
+    font-size: 2.6em;
+  }
 }

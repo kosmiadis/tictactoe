@@ -43,15 +43,19 @@ div.oneVSone-game-screen div.actions #return {
   height: 55px;
 }
 
+div.oneVSone-game-screen div.actions #return button:hover {
+  background-color: #1c9549;
+}
+
 div.oneVSone-game-screen div.tic-tac-toe-container {
   width: 90%;
-  border: 2px solid black;
+  border: 3px solid green;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 330px;
   height: 330px;
   gap: 3px;
-  background-color: black;
+  background-color: green;
 }
 
 div.oneVSone-game-screen div.tic-tac-toe-container div.box {
@@ -69,10 +73,10 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
     width: 200px;
     height: 200px;
   }
-  div.oneVSone-game-screen div.oneVSone-game-screen div.actions {
-    padding: 2em;
+  div.oneVSone-game-screen div.actions {
+    padding: 1em;
   }
-  div.oneVSone-game-screen div.oneVSone-game-screen div.actions p {
-    font-size: 4em;
+  div.oneVSone-game-screen div.actions p {
+    font-size: 4.5em;
   }
 }

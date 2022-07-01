@@ -47,3 +47,54 @@ div.options button {
   font-weight: 900;
   border-radius: 20px;
 }
+
+div.options p {
+  font-weight: 900;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 750px) {
+  div.options div.select-container {
+    padding-top: 4em;
+  }
+  div.options div.select-container div.sel {
+    width: 100%;
+  }
+  div.options div.select-container div.sel h1 {
+    font-size: 3.7em;
+  }
+  div.options div.select-container div.sel select {
+    width: 90%;
+    font-size: 1.8em;
+  }
+  div.options button {
+    margin-top: 1em;
+    font-size: 2.2em;
+  }
+  div.options p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1021px) {
+  div.options div.select-container {
+    padding-top: 4em;
+  }
+  div.options div.select-container div.sel {
+    width: 100%;
+  }
+  div.options div.select-container div.sel h1 {
+    font-size: 3.7em;
+  }
+  div.options div.select-container div.sel select {
+    width: 90%;
+    font-size: 1.8em;
+  }
+  div.options button {
+    margin-top: 1em;
+    font-size: 2.3em;
+  }
+  div.options p {
+    font-size: 1.3em;
+  }
+}

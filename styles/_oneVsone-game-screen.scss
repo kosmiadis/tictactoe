@@ -1,3 +1,6 @@
+$return-btn-bg-color: rgb(109, 196, 141);
+$return-btn-bg-color-hover:  rgb(28, 149, 73);
+
 div.oneVSone-game-screen {
     display: none;
     width: 100%;
@@ -31,7 +34,7 @@ div.oneVSone-game-screen {
             align-items: center;
             margin-left: 18px;
             margin-top: 13px;
-            background-color:rgb(109, 196, 141);
+            background-color: $return-btn-bg-color;
             font-size: 1.5em;
             padding: 0.5em;
             border: none;
@@ -40,19 +43,25 @@ div.oneVSone-game-screen {
             border-radius: 50%;
             width: 55px;
             height: 55px;
+            
+            & button:hover {
+                background-color: $return-btn-bg-color-hover;
+            }
         } 
+
+
     }
     
 
     & div.tic-tac-toe-container {
         width: 90%;
-        border: 2px solid black;
+        border: 3px solid green;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 330px;
         height: 330px;
         gap: 3px;
-        background-color: black;
+        background-color: green;
 
         & div.box {
             width: 108px;
@@ -61,6 +70,11 @@ div.oneVSone-game-screen {
         }
 
     }
+
+    @media screen and (min-width: 769px) {
+
+    }
+
 
     @media screen and (min-width: 1021px)  {
         div.tic-tac-toe-container {
@@ -73,16 +87,15 @@ div.oneVSone-game-screen {
             }
         
         }
-        div.oneVSone-game-screen {
+        
 
-            & div.actions {
-                padding: 2em;
-
-                & p {
-                    font-size: 4em;
-                }
+        div.actions {
+            padding: 1em;
+            & p {
+                font-size: 4.5em;
             }
         }
+    
     }
 }
 
