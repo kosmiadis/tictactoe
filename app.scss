@@ -7,6 +7,7 @@ $bg-image: linear-gradient(to bottom, purple, pink);
 
 body {
     overflow-x: hidden;
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -16,9 +17,8 @@ body {
     * {
         font-family: 'Lato';
     }
-    
-
 }
+
 
 div.carousel-container {
     display: flex;
