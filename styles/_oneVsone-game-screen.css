@@ -4,7 +4,7 @@ div.oneVSone-game-screen {
 }
 
 div.oneVSone-game-screen div.actions {
-  border: 2px solid red;
+  /*(border: 2px solid red;*/
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13,7 +13,7 @@ div.oneVSone-game-screen div.actions {
 }
 
 div.oneVSone-game-screen div.actions p {
-  font-size: 2.5em;
+  font-size: 3.3em;
   font-weight: 600;
 }
 
@@ -22,6 +22,7 @@ div.oneVSone-game-screen div.actions p span {
 }
 
 div.oneVSone-game-screen div.actions #return {
+  align-self: start;
   display: flex;
   justify-content: center;
   align-items: center;
