@@ -7,7 +7,6 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.display = 'flex'
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
-    OneVSOneGameScreen.style.gap = '1em'
     initiallizeGame()
 })
 
