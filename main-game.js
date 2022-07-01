@@ -16,3 +16,6 @@ function initiallizeGame () {
     boxes.forEach(box => box.style.backgroundColor = 'red')
 
 }
+
+document.addEventListener("touchmove", function (e) {e.preventDefault()}, {passive:false}
+);
