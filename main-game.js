@@ -7,13 +7,12 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.display = 'flex'
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
-    OneVSOneGameScreen.style.gap = '4em'
+    OneVSOneGameScreen.style.gap = '2.5em'
     initiallizeGame()
 })
 
 function initiallizeGame () {
     playerSpan.textContent = 'X'
-    boxes.forEach(box => box.style.backgroundColor = 'red')
 
 }
 

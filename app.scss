@@ -94,10 +94,23 @@ div.carousel-container {
 
     & div.tic-tac-toe-container {
         
-        & #return {
-            background-color: rgb(101, 101, 101);
+        & div.actions {
+            & #return button {
+                background-color: rgb(101, 101, 101);
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 769px)  {
+    div.tic-tac-toe-container {
+        width: 600px;
+        height: 600px;
+
+        div.box {
+            width: 200px;
+            height: 200px;
         }
     }
-
-    
 }
