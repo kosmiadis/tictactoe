@@ -31,10 +31,14 @@ optionsBtn.addEventListener('click', e => {
     carousel.style.transform = 'translateX(-100vw)'
 })
 
+let currentThemeColor = 
 returnToMenuBtn.addEventListener('click', e => {
     carouselContainer.style.display = 'block'
     OneVSOneGameScreen.style.display = 'none'
-    boxes.forEach(box => box.textContent = '')
+    boxes.forEach(box => {
+        box.textContent = ''
+        box.backgroundColor = currentThemeColor
+    })
     startingPlayer = 'X'
    
 })
@@ -46,10 +50,12 @@ const soundInput = document.querySelector('#sound')
 themeInput.addEventListener('input', e => {
     if (themeInput.value == 'dark') {
         body.setAttribute('class', 'dark')
+        currentThemeColor = 'rgb(77, 73, 73)'
     }
 
     if (themeInput.value == 'light') {
         body.setAttribute('class', 'light')
+        currentThemeColor = 'rgb(245, 231, 233)'
     }
 })
 soundInput.addEventListener('input', e => {

@@ -67,21 +67,32 @@ function checkIfWin () {
 function checkHorizontal(i ,currentPlayer) {
     if (boxes[i].textContent == currentPlayer & boxes[i+1].textContent == currentPlayer & boxes[i+2].textContent == currentPlayer) {
         playerSpan.textContent = startingPlayer + ' ' + 'Won!'
+        changeBoxColor(boxes[i], boxes[i+1], boxes[i+2])
         returnToMenu()
         
     }
     
 }
 
+function changeBoxColor (box1, box2, box3) {
+    box1.style.backgroundColor = 'green'
+    box2.style.backgroundColor = 'green'
+    box3.style.backgroundColor = 'green'
+
+}
+
 
 function returnToMenu () {
-    
     setTimeout(function returnToMenu () {
         carouselContainer.style.display = 'block'
         OneVSOneGameScreen.style.display = 'none'
         boxes.forEach(box => box.textContent = '')
     }, 2000)
+    boxes.forEach(box => {
+        box.style.backgroundColor = currentThemeColor
 
+    })
+    
 }
 
 
