@@ -37,8 +37,9 @@ optionsBtn.addEventListener('click', e => {
 returnToMenuBtn.addEventListener('click', e => {
     carouselContainer.style.display = 'block'
     OneVSOneGameScreen.style.display = 'none'
-    
     boxes.forEach(box => box.textContent = '')
+    startingPlayer = 'X'
+    console.log('it gone x')
 
 })
 
