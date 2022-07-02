@@ -16,8 +16,7 @@ div.oneVSone-game-screen {
         padding: 0.5em;
 
         & p {
-            padding-top: 0.4em;
-            align-self: end;
+            align-self: start;
             text-align: center;
             font-size: 3.3em;
             font-weight: 600;
@@ -53,9 +52,11 @@ div.oneVSone-game-screen {
     }
     
 
+    
     & div.tic-tac-toe-container {
         width: 90%;
         border: 3px solid green;
+        border-radius: 5px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 330px;
@@ -71,8 +72,16 @@ div.oneVSone-game-screen {
 
     }
 
-    @media screen and (min-width: 769px) {
-
+    @media screen and (min-width: 769px) { /*table*/
+        div.tic-tac-toe-container {
+            width: 456px;
+            height: 456px;
+            
+            & div.box {
+                width: 150px;
+                height: 150px;
+            }
+        }
     }
 
 
@@ -81,7 +90,7 @@ div.oneVSone-game-screen {
             width: 606px;
             height: 606px;
     
-            div.box {
+            & div.box {
                 width: 200px;
                 height: 200px;
             }
@@ -93,6 +102,7 @@ div.oneVSone-game-screen {
             padding: 1em;
             & p {
                 font-size: 4.5em;
+                align-self: start;
             }
         }
     
