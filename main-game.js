@@ -8,6 +8,7 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
     initiallizeGame()
+    startGame()
 })
 
 function initiallizeGame () {
@@ -18,3 +19,11 @@ function initiallizeGame () {
 //for stoping the screen moving when touchmove event occurs in mobile
 document.addEventListener("touchmove", function (e) {e.preventDefault()}, {passive:false}
 );
+
+function startGame() {
+    boxes.forEach(box => {
+        box.addEventListener('click', e => {
+            e.target.textContent = 'X'
+        })
+    })
+}

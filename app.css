@@ -37,6 +37,10 @@ div.oneVSone-game-screen div.actions #return {
   height: 55px;
 }
 
+div.oneVSone-game-screen div.actions #return:hover {
+  cursor: pointer;
+}
+
 div.oneVSone-game-screen div.tic-tac-toe-container {
   width: 90%;
   border-radius: 10px;
@@ -64,6 +68,12 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
   div.oneVSone-game-screen {
     /*tablet*/
   }
+  div.oneVSone-game-screen div.actions #return {
+    font-size: 2.4em;
+  }
+  div.oneVSone-game-screen div.actions p {
+    font-size: 3.2em;
+  }
   div.oneVSone-game-screen div.tic-tac-toe-container {
     width: 456px;
     height: 456px;
@@ -76,19 +86,23 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
 
 @media screen and (min-width: 1021px) {
   div.oneVSone-game-screen div.tic-tac-toe-container {
-    width: 606px;
-    height: 606px;
+    width: 610px;
+    height: 610px;
   }
   div.oneVSone-game-screen div.tic-tac-toe-container div.box {
-    width: 200px;
-    height: 200px;
+    width: 202px;
+    height: 202px;
+    font-size: 5em;
   }
   div.oneVSone-game-screen div.actions {
     padding: 1em;
   }
   div.oneVSone-game-screen div.actions p {
-    font-size: 4.5em;
+    font-size: 3.5em;
     align-self: start;
+  }
+  div.oneVSone-game-screen div.actions #return {
+    font-size: 2.8em;
   }
 }
 
@@ -323,11 +337,11 @@ div.carousel-container div.carousel {
 }
 
 .dark * button {
-  background-color: #514f4f;
+  background-color: #313030;
 }
 
 .dark * button:hover {
-  background-color: #4e4d4d;
+  background-color: #1d1c1c;
 }
 
 .dark select {
