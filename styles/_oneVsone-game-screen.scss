@@ -18,7 +18,7 @@ div.oneVSone-game-screen {
         & p {
             align-self: start;
             text-align: center;
-            font-size: 3.3em;
+            font-size: 2.5em;
             font-weight: 600;
     
             & span {
@@ -27,14 +27,10 @@ div.oneVSone-game-screen {
         }
     
         & #return {
-            align-self: start;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            
             margin-left: 18px;
             margin-top: 13px;
-            background-color: $return-btn-bg-color;
-            font-size: 1.5em;
+            font-size: 2em;
             padding: 0.5em;
             border: none;
             outline: none;
@@ -43,9 +39,7 @@ div.oneVSone-game-screen {
             width: 55px;
             height: 55px;
             
-            & button:hover {
-                background-color: $return-btn-bg-color-hover;
-            }
+            
         } 
 
 
