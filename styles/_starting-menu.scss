@@ -41,6 +41,27 @@ div.starting-menu {
       
 }
 @media screen and (min-width: 581px) {
+
+    div.carousel-container {
+        & div.carousel {
+            & #start-menu {
+            
+                & h1 {
+                    font-size: 6em;
+                    font-weight: 900;
+                
+                }
+            
+                & div.btn-container {            
+                    width: 45%;
+                
+                    & button {
+                        font-size: 2.6em;
+                    }   
+                }
+            }            
+        }
+    }
 }
 
 
@@ -59,7 +80,6 @@ div.starting-menu {
                 }
             
                 & div.btn-container {            
-                    width: 35%;
                 
                     & button {
                         font-size: 2.6em;

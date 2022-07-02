@@ -61,7 +61,7 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
   justify-content: center;
   align-items: center;
   font-size: 3em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 581px) {

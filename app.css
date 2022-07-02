@@ -61,7 +61,7 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
   justify-content: center;
   align-items: center;
   font-size: 3em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 581px) {
@@ -245,13 +245,26 @@ div.starting-menu div.btn-container button {
   border-radius: 20px;
 }
 
+@media screen and (min-width: 581px) {
+  div.carousel-container div.carousel #start-menu h1 {
+    font-size: 6em;
+    font-weight: 900;
+  }
+  div.carousel-container div.carousel #start-menu div.btn-container {
+    width: 45%;
+  }
+  div.carousel-container div.carousel #start-menu div.btn-container button {
+    font-size: 2.6em;
+  }
+}
+
 @media screen and (min-width: 1021px) {
   div.carousel-container div.carousel #start-menu h1 {
     font-size: 6em;
     font-weight: 900;
   }
   div.carousel-container div.carousel #start-menu div.btn-container {
-    width: 35%;
+    width: 50%;
   }
   div.carousel-container div.carousel #start-menu div.btn-container button {
     font-size: 2.6em;
