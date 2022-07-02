@@ -3,9 +3,9 @@
 @import 'styles/_starting-menu.scss';
 
 
-$dark-bg-color: rgb(96, 90, 90);
-$btn-dark-mode-color: rgb(38, 36, 36);
-$btn-dark-mode-color-hover: rgb(0, 0, 0);
+$dark-bg-color: rgb(77, 73, 73);
+$btn-dark-mode-color: rgb(81, 79, 79);
+$btn-dark-mode-color-hover: rgb(78, 77, 77);
 
 $btn-light-mode-color: rgb(109, 196, 141);
 $btn-light-mode-color-hover: rgb(28, 149, 73);
@@ -79,9 +79,6 @@ div.carousel-container {
         background-color: beige;
     }
 
-    & #return {
-        background-color: $btn-light-mode-color;
-    }
 }
 
 .dark {

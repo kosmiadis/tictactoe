@@ -48,25 +48,29 @@ div.oneVSone-game-screen div.actions #return button:hover {
 
 div.oneVSone-game-screen div.tic-tac-toe-container {
   width: 90%;
-  border: 3px solid green;
-  border-radius: 5px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 330px;
-  height: 330px;
-  gap: 3px;
-  background-color: green;
+  width: 326px;
+  height: 326px;
+  gap: 2px;
+  background-color: black;
 }
 
 div.oneVSone-game-screen div.tic-tac-toe-container div.box {
   width: 108px;
   height: 108px;
-  background-color: white;
+  background-color: #f5e7e9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
 }
 
 @media screen and (min-width: 769px) {
   div.oneVSone-game-screen {
-    /*table*/
+    /*tablet*/
   }
   div.oneVSone-game-screen div.tic-tac-toe-container {
     width: 456px;
@@ -315,13 +319,9 @@ div.carousel-container div.carousel {
   background-color: beige;
 }
 
-.light #return {
-  background-color: #6dc48d;
-}
-
 .dark {
   overflow: hidden;
-  background-color: #605a5a;
+  background-color: #4d4949;
   transition: background-color 0.2s;
 }
 
@@ -331,11 +331,11 @@ div.carousel-container div.carousel {
 }
 
 .dark * button {
-  background-color: #262424;
+  background-color: #514f4f;
 }
 
 .dark * button:hover {
-  background-color: black;
+  background-color: #4e4d4d;
 }
 
 .dark select {
