@@ -64,7 +64,7 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
   font-weight: 900;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 581px) {
   div.oneVSone-game-screen {
     /*tablet*/
   }
@@ -79,8 +79,8 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
     height: 456px;
   }
   div.oneVSone-game-screen div.tic-tac-toe-container div.box {
-    width: 150px;
-    height: 150px;
+    width: 152px;
+    height: 152px;
   }
 }
 
@@ -98,7 +98,7 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
     padding: 1em;
   }
   div.oneVSone-game-screen div.actions p {
-    font-size: 3.5em;
+    font-size: 3.8em;
     align-self: start;
   }
   div.oneVSone-game-screen div.actions #return {
@@ -161,7 +161,7 @@ div.options p {
   font-size: 1em;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 581px) {
   div.options div.select-container {
     padding-top: 4em;
   }
@@ -192,18 +192,18 @@ div.options p {
     width: 100%;
   }
   div.options div.select-container div.sel h1 {
-    font-size: 3.7em;
+    font-size: 4em;
   }
   div.options div.select-container div.sel select {
     width: 90%;
-    font-size: 1.8em;
+    font-size: 2em;
   }
   div.options button {
     margin-top: 1em;
-    font-size: 2.3em;
+    font-size: 2.5em;
   }
   div.options p {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
 }
 
@@ -310,7 +310,7 @@ div.carousel-container div.carousel {
 
 .light * {
   transition: color 0.2s;
-  color: #040428;
+  color: #060642;
 }
 
 .light div.starting-menu h1 {
@@ -333,7 +333,7 @@ div.carousel-container div.carousel {
 
 .dark * {
   transition: color 0.2s;
-  color: white;
+  color: #f5e7e9;
 }
 
 .dark * button {
@@ -349,6 +349,9 @@ div.carousel-container div.carousel {
 }
 
 .dark div.oneVSone-game-screen div.tic-tac-toe-container {
-  background-color: black;
-  border: 3px solid black;
+  background-color: white;
+}
+
+.dark div.oneVSone-game-screen div.tic-tac-toe-container div.box {
+  background-color: #4d4949;
 }

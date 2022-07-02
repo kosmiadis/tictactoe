@@ -1,3 +1,9 @@
+const board = [
+    [],[],[],
+    [],[],[],
+    [],[],[]
+]
+
 const player = document.querySelector('#player')
 const playerSpan = player.querySelector('span')
 const boxes = document.querySelectorAll('.box')
@@ -26,4 +32,12 @@ function startGame() {
             e.target.textContent = 'X'
         })
     })
+}
+
+function changePlayerOrder () {
+
+}
+
+function checkIfWin (board) {
+    
 }

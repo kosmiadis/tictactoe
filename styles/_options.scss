@@ -54,7 +54,7 @@ div.options {
     }
  
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 581px) {
 
     div.options {
         & div.select-container {
@@ -108,13 +108,13 @@ div.options {
                
     
                 & h1 {
-                    font-size: 3.7em; 
+                    font-size: 4em; 
                 }
                 & select {
                     
                     width: 90%;
                    
-                    font-size: 1.8em;
+                    font-size: 2em;
                    
                 }
             
@@ -124,13 +124,13 @@ div.options {
         & button {
             margin-top: 1em;
             
-            font-size: 2.3em;
+            font-size: 2.5em;
             
             
         }
 
         & p {
-            font-size: 1.3em;
+            font-size: 1.8em;
             
         }
     }

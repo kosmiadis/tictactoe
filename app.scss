@@ -2,7 +2,7 @@
 @import 'styles/_options.scss';
 @import 'styles/_starting-menu.scss';
 
-
+$light-bg-color: rgb(245, 231, 233);
 $dark-bg-color: rgb(77, 73, 73);
 $btn-dark-mode-color: rgb(49, 48, 48);
 $btn-dark-mode-color-hover: rgb(29, 28, 28);
@@ -55,7 +55,7 @@ div.carousel-container {
 
 .light {
     overflow: hidden;
-    background-color: rgb(245, 231, 233);
+    background-color: $light-bg-color;
     transition: background-color 0.2s;
 
     button:hover {
@@ -64,7 +64,7 @@ div.carousel-container {
 
     & * {
         transition: color 0.2s;
-        color: rgb(4, 4, 40);
+        color: rgb(6, 6, 66);
     }
 
     & div.starting-menu h1 {
@@ -88,7 +88,7 @@ div.carousel-container {
 
     & * {
         transition: color 0.2s;
-        color: white;
+        color: $light-bg-color;
     }
 
     & * button {
@@ -105,10 +105,12 @@ div.carousel-container {
     & div.oneVSone-game-screen {
 
         & div.tic-tac-toe-container {
-            background-color: black;   
-            border: 3px solid black;
+            background-color: white;   
+
             
-            
+                & div.box {
+                    background-color: $dark-bg-color;
+                }
         }
     }
     
