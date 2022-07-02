@@ -25,22 +25,18 @@ window.addEventListener('load', e => {
             btnSound.play()
         })
     })    
-   
 })
 
 optionsBtn.addEventListener('click', e => {
     carousel.style.transform = 'translateX(-100vw)'
 })
 
-
-
 returnToMenuBtn.addEventListener('click', e => {
     carouselContainer.style.display = 'block'
     OneVSOneGameScreen.style.display = 'none'
     boxes.forEach(box => box.textContent = '')
     startingPlayer = 'X'
-    console.log('it gone x')
-
+   
 })
 
 //inputs 
@@ -56,8 +52,6 @@ themeInput.addEventListener('input', e => {
         body.setAttribute('class', 'light')
     }
 })
-
-
 soundInput.addEventListener('input', e => {
     if (soundInput.value == 'on') {
         buttons.forEach(button => {
@@ -77,14 +71,11 @@ soundInput.addEventListener('input', e => {
 
    
 })
-
-
 //options button
 const backBtn = document.querySelector('#back')
 backBtn.addEventListener('click', e => {
     carousel.style.transform = 'translateX(0%)'  
 })
-
 screens.push(startingMenu)
 screens.push(OneVSOneGameScreen)
 

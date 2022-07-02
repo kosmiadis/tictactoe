@@ -3,18 +3,18 @@ const playerSpan = player.querySelector('span')
 const boxes = document.querySelectorAll('.box')
 let startingPlayer = 'X'
 
+
 play1V1Btn.addEventListener('click', e => {
     carouselContainer.style.display = 'none'
     OneVSOneGameScreen.style.display = 'flex'
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
-    initiallizeGame()
-})
+    playerSpan.textContent = 'X'
+    
 
-function initiallizeGame () {
-    playerSpan.textContent = startingPlayer
-    startGame()
-}
+})
+startGame()
+    
 
 function startGame() {
     boxes.forEach(box => {
@@ -22,20 +22,22 @@ function startGame() {
             e.target.textContent = startingPlayer
             changePlayerOrder()
             playerSpan.textContent = startingPlayer
-            checkIfWin(boxes)
+            
         })
+        
     })
 }
 
 function changePlayerOrder () {
-    if (startingPlayer == 'X') {
-        startingPlayer = 'O'
+    let change 
+    if (startingPlayer == 'O') {
+        change = 'X'
     }
-
-    else if (startingPlayer == 'O') {
-        startingPlayer = 'X'
+    else {
+        change = 'O'
     }
-    console.log(startingPlayer)
+    startingPlayer = change
+    
 }
 
 function checkIfWin () {
