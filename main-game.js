@@ -47,19 +47,13 @@ function checkIfWin () {
     for (let i=0; i<=6; i++) {
         if (i==0) {
             checkHorizontal(i,startingPlayer)
-            checkVertical(i, startingPlayer)
         }
 
         if (i==3) {
             checkHorizontal(i,startingPlayer)
-            checkVertical(i, startingPlayer)
-        
         }
-        
         if (i==6) {
             checkHorizontal(i,startingPlayer)
-            checkVertical(i, startingPlayer)
-        
         }
     }
 
