@@ -71,7 +71,7 @@ function checkIfWin () {
 }
 
 function displayWinner () {
-    playerSpan.innerText = startingPlayer + ' ' + 'Won!' 
+    playerSpan.textContent = startingPlayer + ' ' + 'Won!' 
 }
 
 function checkHorizontal(i ,currentPlayer) {
@@ -131,7 +131,7 @@ function changeColor (box1, box2, box3) {
 }
 
 function changeColorAll () {
-    box.forEach(box => box.style.color = 'red')
+    boxes.forEach(box => box.style.color = 'red')
 }
 let itsDark = false
 function changeColorToNormal () {
