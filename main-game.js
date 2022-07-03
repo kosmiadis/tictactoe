@@ -10,9 +10,11 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
     playerSpan.textContent = 'X'
+    boxesFull = 0
     
 
 })
+
 startGame()
     
 
@@ -61,6 +63,7 @@ function checkIfWin () {
 
     if (boxesFull == 8) {
         playerSpan.textContent = 'None Won!'
+        changeColorAll()
         returnToMenu()
     }
     
@@ -110,6 +113,10 @@ function changeColor (box1, box2, box3) {
     box1.style.color = 'green'
     box2.style.color = 'green'
     box3.style.color = 'green'
+}
+
+function changeColorAll () {
+    box.forEach(box => box.style.color = 'red')
 }
 let itsDark = false
 function changeColorToNormal () {
