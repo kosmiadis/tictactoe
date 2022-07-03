@@ -47,13 +47,19 @@ function checkIfWin () {
     for (let i=0; i<=6; i++) {
         if (i==0) {
             checkHorizontal(i,startingPlayer)
+            checkVertical(i, startingPlayer)
         }
 
         if (i==3) {
             checkHorizontal(i,startingPlayer)
+            checkVertical(i, startingPlayer)
+        
         }
+        
         if (i==6) {
             checkHorizontal(i,startingPlayer)
+            checkVertical(i, startingPlayer)
+        
         }
     }
 
@@ -69,9 +75,15 @@ function checkHorizontal(i ,currentPlayer) {
         playerSpan.textContent = startingPlayer + ' ' + 'Won!'
         changeBoxColor(boxes[i], boxes[i+1], boxes[i+2])
         returnToMenu()
-        
     }
-    
+}
+
+function checkVertical (i, currentPlayer) {
+    if (boxes[i].textContent == currentPlayer & boxes[i+3].textContent == currentPlayer & boxes[i+6]) {
+        playerSpan.textContent = startingPlayer + ' ' + 'Won!'
+        changeBoxColor(boxes[i], boxes[i+3], boxes[i+6])
+        returnToMenu()
+    }
 }
 
 function changeBoxColor (box1, box2, box3) {
