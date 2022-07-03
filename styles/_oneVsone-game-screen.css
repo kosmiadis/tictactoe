@@ -85,15 +85,6 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
 }
 
 @media screen and (min-width: 1021px) {
-  div.oneVSone-game-screen div.tic-tac-toe-container {
-    width: 610px;
-    height: 610px;
-  }
-  div.oneVSone-game-screen div.tic-tac-toe-container div.box {
-    width: 202px;
-    height: 202px;
-    font-size: 5em;
-  }
   div.oneVSone-game-screen div.actions {
     padding: 1em;
   }

@@ -37,7 +37,7 @@ returnToMenuBtn.addEventListener('click', e => {
     OneVSOneGameScreen.style.display = 'none'
     boxes.forEach(box => {
         box.textContent = ''
-        box.backgroundColor = currentThemeColor
+        
     })
     startingPlayer = 'X'
    
