@@ -133,6 +133,7 @@ function changeColor (box1, box2, box3) {
 function changeColorAll () {
     boxes.forEach(box => box.style.color = 'red')
 }
+
 let itsDark = false
 function changeColorToNormal () {
     if (itsDark == false) {
