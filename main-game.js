@@ -10,6 +10,7 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
     playerSpan.textContent = 'X'
+    //boxes.forEach(box => box.style.color = 'rgb(6, 6, 66)')
     
 
 })
@@ -45,6 +46,7 @@ function changePlayerOrder () {
 function checkIfWin () {
 
     for (let i=0; i<=6; i++) {
+        checkVertical(startingPlayer)
         if (i==0) {
             checkHorizontal(i,startingPlayer)
         }
@@ -67,26 +69,35 @@ function checkIfWin () {
 function checkHorizontal(i ,currentPlayer) {
     if (boxes[i].textContent == currentPlayer & boxes[i+1].textContent == currentPlayer & boxes[i+2].textContent == currentPlayer) {
         playerSpan.textContent = startingPlayer + ' ' + 'Won!'
-        changeBoxColor(boxes[i], boxes[i+1], boxes[i+2])
+        changeColor(boxes[i], boxes[i+1], boxes[i+2])
         returnToMenu()
     }
 }
 
-function checkVertical (i, currentPlayer) {
-    if (boxes[i].textContent == currentPlayer & boxes[i+3].textContent == currentPlayer & boxes[i+6]) {
-        playerSpan.textContent = startingPlayer + ' ' + 'Won!'
-        changeBoxColor(boxes[i], boxes[i+3], boxes[i+6])
+function checkVertical (currentPlayer) {
+
+    if (boxes[0].textContent == currentPlayer & boxes[3].textContent == currentPlayer & boxes[6].textContent == currentPlayer) {
+        changeColor(boxes[0], boxes[3], boxes[6], 'green')
         returnToMenu()
     }
+
+    else if (boxes[1].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[7].textContent == currentPlayer) {
+        changeColor(boxes[1], boxes[4], boxes[7], 'green')
+        returnToMenu()
+    }      
+
+    else if (boxes[2].textContent == currentPlayer & boxes[5].textContent == currentPlayer & boxes[8].textContent == currentPlayer) {
+        changeColor(boxes[2], boxes[5], boxes[8], 'green')
+        returnToMenu()
+    }
+
 }
 
-function changeBoxColor (box1, box2, box3) {
-    box1.style.backgroundColor = 'green'
-    box2.style.backgroundColor = 'green'
-    box3.style.backgroundColor = 'green'
-
+function changeColor (box1, box2, box3, color) {
+    box1.style.color = color
+    box2.style.color = color
+    box3.style.color = color
 }
-
 
 function returnToMenu () {
     setTimeout(function returnToMenu () {
