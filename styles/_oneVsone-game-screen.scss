@@ -104,7 +104,10 @@ div.oneVSone-game-screen {
 
     @media screen and (min-width: 1021px)  {
         
-
+        div.carousel-container {
+            max-width: 1400px;
+            margin: auto;
+        }
         div.actions {
             padding: 1em;
             & p {
@@ -118,5 +121,7 @@ div.oneVSone-game-screen {
         }
     
     }
+
+
 }
 

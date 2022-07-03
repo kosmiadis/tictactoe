@@ -85,6 +85,10 @@ div.oneVSone-game-screen div.tic-tac-toe-container div.box {
 }
 
 @media screen and (min-width: 1021px) {
+  div.oneVSone-game-screen div.carousel-container {
+    max-width: 1400px;
+    margin: auto;
+  }
   div.oneVSone-game-screen div.actions {
     padding: 1em;
   }
