@@ -46,6 +46,7 @@ function checkIfWin () {
 
     for (let i=0; i<=6; i++) {
         checkVertical(startingPlayer)
+        checkDiagonal(startingPlayer)
         if (i==0) {
             checkHorizontal(i,startingPlayer)
         }
@@ -104,14 +105,20 @@ function checkDiagonal (currentPlayer) {
     }
 }
 
+
 function changeColor (box1, box2, box3) {
     box1.style.color = 'green'
     box2.style.color = 'green'
     box3.style.color = 'green'
 }
-
+let itsDark = false
 function changeColorToNormal () {
-    boxes.forEach(box => box.style.color = 'rgb(6,6,66)')
+    if (itsDark == false) {
+        boxes.forEach(box => box.style.color = 'rgb(6,6,66)')
+    }
+    else if (itsDark == true) {
+        boxes.forEach(box => box.style.color = 'rgb(245, 231, 233)')
+    }
 }
 
 function returnToMenu () {

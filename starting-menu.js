@@ -54,11 +54,13 @@ themeInput.addEventListener('input', e => {
     if (themeInput.value == 'dark') {
         body.setAttribute('class', 'dark')
         currentThemeColor = 'rgb(77, 73, 73)'
+        itsDark = true
     }
 
     if (themeInput.value == 'light') {
         body.setAttribute('class', 'light')
         currentThemeColor = 'rgb(245, 231, 233)'
+        itsDark = false
     }
 })
 soundInput.addEventListener('input', e => {
