@@ -35,13 +35,16 @@ let currentThemeColor =
 returnToMenuBtn.addEventListener('click', e => {
     carouselContainer.style.display = 'block'
     OneVSOneGameScreen.style.display = 'none'
-    boxes.forEach(box => {
-        box.textContent = ''
-        
-    })
+    clearBoxes()
     startingPlayer = 'X'
    
 })
+
+function clearBoxes () {
+    boxes.forEach(box => {
+        box.textContent = ''
+    })
+}
 
 //inputs 
 const themeInput = document.querySelector('#theme')

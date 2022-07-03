@@ -10,7 +10,6 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.flexDirection = 'column'
     OneVSOneGameScreen.style.alignItems = 'center'
     playerSpan.textContent = 'X'
-    //boxes.forEach(box => box.style.color = 'rgb(6, 6, 66)')
     
 
 })
@@ -68,7 +67,6 @@ function checkIfWin () {
 
 function checkHorizontal(i ,currentPlayer) {
     if (boxes[i].textContent == currentPlayer & boxes[i+1].textContent == currentPlayer & boxes[i+2].textContent == currentPlayer) {
-        playerSpan.textContent = startingPlayer + ' ' + 'Won!'
         changeColor(boxes[i], boxes[i+1], boxes[i+2])
         returnToMenu()
     }
@@ -77,33 +75,51 @@ function checkHorizontal(i ,currentPlayer) {
 function checkVertical (currentPlayer) {
 
     if (boxes[0].textContent == currentPlayer & boxes[3].textContent == currentPlayer & boxes[6].textContent == currentPlayer) {
-        changeColor(boxes[0], boxes[3], boxes[6], 'green')
+        changeColor(boxes[0], boxes[3], boxes[6])
         returnToMenu()
+        
     }
 
     else if (boxes[1].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[7].textContent == currentPlayer) {
-        changeColor(boxes[1], boxes[4], boxes[7], 'green')
+        changeColor(boxes[1], boxes[4], boxes[7])
         returnToMenu()
     }      
 
     else if (boxes[2].textContent == currentPlayer & boxes[5].textContent == currentPlayer & boxes[8].textContent == currentPlayer) {
-        changeColor(boxes[2], boxes[5], boxes[8], 'green')
+        changeColor(boxes[2], boxes[5], boxes[8])
         returnToMenu()
+        
     }
 
 }
 
-function changeColor (box1, box2, box3, color) {
-    box1.style.color = color
-    box2.style.color = color
-    box3.style.color = color
+function checkDiagonal (currentPlayer) {
+    if (boxes[0].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[8].textContent == currentPlayer) {
+        changeColor(boxes[0], boxes[4], boxes[8])
+        returnToMenu()
+    }
+    else if (boxes[2].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[6].textContent == currentPlayer) {
+        changeColor(boxes[2], boxes[4], boxes[6])
+        returnToMenu()
+    }
+}
+
+function changeColor (box1, box2, box3) {
+    box1.style.color = 'green'
+    box2.style.color = 'green'
+    box3.style.color = 'green'
+}
+
+function changeColorToNormal () {
+    boxes.forEach(box => box.style.color = 'rgb(6,6,66)')
 }
 
 function returnToMenu () {
     setTimeout(function returnToMenu () {
         carouselContainer.style.display = 'block'
         OneVSOneGameScreen.style.display = 'none'
-        boxes.forEach(box => box.textContent = '')
+        clearBoxes()
+        changeColorToNormal()
     }, 2000)
     boxes.forEach(box => {
         box.style.backgroundColor = currentThemeColor
