@@ -3,7 +3,7 @@ const playerSpan = player.querySelector('span')
 const boxes = document.querySelectorAll('.box')
 let startingPlayer = 'X'
 let boxesFull = 0
-
+let checkForBoxesFull = true
 play1V1Btn.addEventListener('click', e => {
     carouselContainer.style.display = 'none'
     OneVSOneGameScreen.style.display = 'flex'
@@ -11,6 +11,7 @@ play1V1Btn.addEventListener('click', e => {
     OneVSOneGameScreen.style.alignItems = 'center'
     playerSpan.textContent = 'X'
     boxesFull = 0
+    checkForBoxesFull = true
     
 
 })
@@ -61,7 +62,7 @@ function checkIfWin () {
         }
     }
 
-    if (boxesFull == 8) {
+    if (boxesFull == 8 & checkForBoxesFull == true) {
         playerSpan.textContent = 'None Won!'
         changeColorAll()
         returnToMenu()
@@ -69,29 +70,41 @@ function checkIfWin () {
     
 }
 
+function displayWinner () {
+    playerSpan.innerText = startingPlayer + ' ' + 'Won!' 
+}
+
 function checkHorizontal(i ,currentPlayer) {
     if (boxes[i].textContent == currentPlayer & boxes[i+1].textContent == currentPlayer & boxes[i+2].textContent == currentPlayer) {
+        displayWinner()
         changeColor(boxes[i], boxes[i+1], boxes[i+2])
         returnToMenu()
+        checkForBoxesFull = false
     }
 }
 
 function checkVertical (currentPlayer) {
 
     if (boxes[0].textContent == currentPlayer & boxes[3].textContent == currentPlayer & boxes[6].textContent == currentPlayer) {
+        displayWinner()
         changeColor(boxes[0], boxes[3], boxes[6])
         returnToMenu()
+        checkForBoxesFull = false
         
     }
 
     else if (boxes[1].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[7].textContent == currentPlayer) {
+        displayWinner()
         changeColor(boxes[1], boxes[4], boxes[7])
         returnToMenu()
+        checkForBoxesFull = false
     }      
 
     else if (boxes[2].textContent == currentPlayer & boxes[5].textContent == currentPlayer & boxes[8].textContent == currentPlayer) {
+        displayWinner()
         changeColor(boxes[2], boxes[5], boxes[8])
         returnToMenu()
+        checkForBoxesFull = false
         
     }
 
@@ -99,10 +112,12 @@ function checkVertical (currentPlayer) {
 
 function checkDiagonal (currentPlayer) {
     if (boxes[0].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[8].textContent == currentPlayer) {
+        displayWinner()
         changeColor(boxes[0], boxes[4], boxes[8])
         returnToMenu()
     }
     else if (boxes[2].textContent == currentPlayer & boxes[4].textContent == currentPlayer & boxes[6].textContent == currentPlayer) {
+        displayWinner()
         changeColor(boxes[2], boxes[4], boxes[6])
         returnToMenu()
     }
